@@ -1,3 +1,10 @@
+datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/msa-user?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&autoReconnect=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=Asia/Seoul
+  username: root
+  # 중요 정보 암호화
+  password: {cipher}e08ce3c94cc50cae4d81e7ea02f503fa9762201896984dd5035e8f93003f0121
+
 token:
   expiration_time: 86400000 # 24H
   secret: UW2F4eDcwlwxhXHwaT8hYs06dvDc6VvNx8S+Txx++LnIpmYg/N2o5vJ6u57jK3pOef6/KVjUMhil2IKcLy7TQg==
