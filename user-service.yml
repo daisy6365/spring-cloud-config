@@ -3,7 +3,7 @@ datasource:
   url: jdbc:mysql://localhost:3306/msa-user?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&autoReconnect=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=Asia/Seoul
   username: root
   # 중요 정보 암호화
-  password: '{cipher}e08ce3c94cc50cae4d81e7ea02f503fa9762201896984dd5035e8f93003f0121'
+  password: '{cipher}AYA9AZSrhFPo1hc3y389D58ezKCRtok8uyDyKsu71/t1q2sOeeMAsVZHT/j+JyKKr5HIDK5PBc7faLs3VHL2jGqzIc3+5RPVsV8/ddOBbCTafQZC1VeXkPHS5zaOeAUeV6+Dd5tab9JVmPVlNd3ymFZP7NpWWBkduk+vOVib7OjBTmfqdAER7xOOBTJu1cacpv/DtpQK2qsqp4R8wA/8dotI8Iv4/46v1Y3JYVs2Yg6zq1hG8+fMZRQJeqZB6sa17cF3mHowyUYzdZ7HAWMCbVrOEd0KPo5CJ5oHaeEOGP+vmdDFgN/QM5FXhlDrhx6MXmNzwerY2aLKuYmP+Knm7cAuurcVZGWZ8fS+IzwQ21VXdOzU2siaJ4HkEc8yQR/+DghTcVG3u1h4gWHW48DwIk8UseFeSt8vEXtNSV/SCtv/Ipt0AZ3Yt2U9Cwp31dePKnnSD3aLccGeV1nQXIcrAecWJkOjKE3IDReS8UbYuykpafFQ76bFQmVuvlL2TrTT/a7wLWsI3KWVix3yl6vaF048TKPJysK8HYD6hphuMxa9Yg=='
 
 token:
   expiration_time: 86400000 # 24H
