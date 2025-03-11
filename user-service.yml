@@ -1,10 +1,22 @@
-datasource:
-  driver-class-name: com.mysql.cj.jdbc.Driver
-  url: jdbc:mysql://localhost:3306/msa-user?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&autoReconnect=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=Asia/Seoul
-  username: root
-  password: root
-  # 중요 정보 암호화
-#  password: '{cipher}AYAZZFV31DLz0E7r8yqm5ESofr11NVV30asEbsqPGd+zN5fG54qzBgDi7Doi0AwYhJJus5SSY/0Ukep/WdMJmgXGqVmoZgRBiaPV/xfIC+FGeueBUlsIBb441e2jWoL0Sh1V16wTjrFrSx5lt265hhckmZHyXxZZ4fiq+kHcPxeZKY1M8XR/QQR9SdYtohvhgysekzDlcNNlsuwfIphB9bbpEf4VtPjm+Il4L6Rrmg3Xub1OyVA1MW9RR+4QVnGDNJOTbUNM8NyvyQO0NdN4YNUUPZcTJpEnnzwNnxnnxsyj5qP/DJucEU2VVbSWHz15Ty9Hqbp/IBE96lcqc7XOOizJsha5TlSm0+mnX1LiHWd/MemXwRS32IA7iFzTGOpZYgxKNcTLgJPWSNmEUzBGk5d7QTF3ZfwqV5N9oUiOao7b8duBeVg9ZqbZbHDPjOEiWo2Xt0W91AxMb16YUA/bragbC2O5dlQtEqVxxWsX/nsi0jX1v6RuVZ4v+K6bJ/WhpVWrnPlU4ay8MUXPa8on6Wf1i+l5TkXurXmeoznM9Tv2qw=='
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/msa-user?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&autoReconnect=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=Asia/Seoul
+    username: root
+    # 중요 정보 암호화
+    password: '{cipher}AYAZZFV31DLz0E7r8yqm5ESofr11NVV30asEbsqPGd+zN5fG54qzBgDi7Doi0AwYhJJus5SSY/0Ukep/WdMJmgXGqVmoZgRBiaPV/xfIC+FGeueBUlsIBb441e2jWoL0Sh1V16wTjrFrSx5lt265hhckmZHyXxZZ4fiq+kHcPxeZKY1M8XR/QQR9SdYtohvhgysekzDlcNNlsuwfIphB9bbpEf4VtPjm+Il4L6Rrmg3Xub1OyVA1MW9RR+4QVnGDNJOTbUNM8NyvyQO0NdN4YNUUPZcTJpEnnzwNnxnnxsyj5qP/DJucEU2VVbSWHz15Ty9Hqbp/IBE96lcqc7XOOizJsha5TlSm0+mnX1LiHWd/MemXwRS32IA7iFzTGOpZYgxKNcTLgJPWSNmEUzBGk5d7QTF3ZfwqV5N9oUiOao7b8duBeVg9ZqbZbHDPjOEiWo2Xt0W91AxMb16YUA/bragbC2O5dlQtEqVxxWsX/nsi0jX1v6RuVZ4v+K6bJ/WhpVWrnPlU4ay8MUXPa8on6Wf1i+l5TkXurXmeoznM9Tv2qw=='
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    #update -> 삭제안하고싶을때 #none -> 배포시에(운영환경)
+    properties:
+      hibernate:
+        default_batch_fetch_size: 500
+        #        show_sql: false
+        format_sql: true
+    open-in-view: false
+    generate-ddl: true
 
 token:
   expiration_time: 86400000 # 24H
