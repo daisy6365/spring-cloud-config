@@ -27,3 +27,5 @@ gateway:
 
 order_service:
   url: http://127.0.0.1:8000/order-service/%s/orders
+  exception:
+    order_is_not_exist: User's orders is not exist.
